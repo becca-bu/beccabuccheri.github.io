@@ -1,0 +1,158 @@
+/* global */
+ @font-face {
+    font-family: 'compagnon' !important;
+    src: url(/fonts/COMPAGNON-LIGHTITALIC.OTF);
+ }
+
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'compagnon';
+    background-color: #d9d9d9;
+    color: #101214;
+ }
+
+ /* Style the header with a grey background and some padding */
+ .header {
+    float: inherit;
+    text-align: center;
+    overflow: hidden;
+    background-color: (rgba(red, green, blue, 0));
+  }
+
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 40px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-timing-function: step-start;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  @keyframes logo {
+    0% {
+        font-weight: bolder;
+        font-style: normal;
+    }
+    20% {
+        font-weight: 500;
+    }
+    40% {
+        font-style: normal;
+        font-weight: normal;
+    }
+    60% {
+        font-style: italic;
+        font-weight: lighter;
+    }
+    80% {
+
+        font-style: italic;
+        font-weight: bolder;
+    }
+    100% {
+        font-weight: bolder;
+        font-style: normal;
+    }
+  }
+
+  /* Style the header */
+  .header a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 4px;
+    font-style: italic;
+    padding: 40px;
+  }
+
+    /* Style the active/current link*/
+  .header a:active, a:focus {
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .header a:hover {
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .header-links {
+    padding-bottom: 48px;
+  }
+
+ .nav-menu {
+    float: inherit;
+    display: none;
+ }
+
+ #nav-items {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 20px;
+ }
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 968px) {
+        .header-links {
+            display: none;
+        }
+
+        .nav-menu {
+            display: block;
+            padding-bottom: 16px;
+        }
+  }
+
+  /* styling della galleria */
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 0;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .image {
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  .image:hover {
+    transform: scale(0.9);
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 968px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
