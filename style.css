@@ -3,16 +3,60 @@
     font-family: 'compagnon' !important;
     src: url(/fonts/Compagnon-Italic.woff2);
  }
+    @font-face {
+  font-family: 'compagnon' !important;
+  src: url(/fonts/Compagnon-Italic.eot); 
+  src: url(/fonts/Compagnon-Italic.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/Compagnon-Italic.woff2) format('woff2'), 
+  url(/fonts/Compagnon-Italic.woff) format('woff'), 
+  url(/fonts/Compagnon-LightItalic.otf)  format('opentype'), 
+}
 */
 
  @font-face {
-  font-family: 'compagnon' !important;
-  src: url(/fonts/Compagnon-Italic.eot); /* IE9 Compat Modes */
-  src: url(/fonts/Compagnon-Italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
-       url(/fonts/Compagnon-Italic.woff2) format('woff2'), /* Super Modern Browsers */
-       url(/fonts/Compagnon-Italic.woff) format('woff'), /* Pretty Modern Browsers */
-       url(/fonts/Compagnon-LightItalic.otf)  format('opentype'), /* Safari, Android, iOS */
- }
+  font-family: 'compagnonlight';
+  src: url('compagnon-light-webfont.woff2') format('woff2'),
+       url('compagnon-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  }
+
+@font-face {
+  font-family: 'compagnonlight_italic';
+  src: url('compagnon-lightitalic-webfont.woff2') format('woff2'),
+       url('compagnon-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  }
+
+@font-face {
+  font-family: 'compagnonmedium';
+  src: url('compagnon-medium-webfont.woff2') format('woff2'),
+       url('compagnon-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  }
+
+@font-face {
+  font-family: 'compagnonroman';
+  src: url('compagnon-roman-webfont.woff2') format('woff2'),
+       url('compagnon-roman-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  }
+
+@font-face {
+  font-family: 'compagnonbold';
+  src: url('compagnon-bold-webfont.woff2') format('woff2'),
+       url('compagnon-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+  }
 
  body{
     margin: 0;
