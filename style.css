@@ -11,16 +11,15 @@
   src: url(/fonts/Compagnon-Italic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
        url(/fonts/Compagnon-Italic.woff2) format('woff2'), /* Super Modern Browsers */
        url(/fonts/Compagnon-Italic.woff) format('woff'), /* Pretty Modern Browsers */
-       url(/fonts/Compagnon-LightItalic.otf)  format('truetype'), /* Safari, Android, iOS */
+       url(/fonts/Compagnon-LightItalic.otf)  format('opentype'), /* Safari, Android, iOS */
  }
 
  body{
     margin: 0;
     padding: 0;
-    font-family: 'compagnon';
     background-color: #d9d9d9;
     color: #101214;
-    font-family: 'compagnon', Fallback, monospace;
+    font-family: 'compagnon', monospace;
  }
 
  /* Style the header with a grey background and some padding */
