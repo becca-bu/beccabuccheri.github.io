@@ -1,8 +1,4 @@
 /* global */
-/* @font-face {
-    font-family: 'compagnon' !important;
-    src: url(/fonts/Compagnon-Italic.woff2);
- }
     @font-face {
   font-family: 'compagnon' !important;
   src: url(/fonts/Compagnon-Italic.eot); 
@@ -10,15 +6,8 @@
   url(/fonts/Compagnon-Italic.woff2) format('woff2'), 
   url(/fonts/Compagnon-Italic.woff) format('woff'), 
   url(/fonts/Compagnon-LightItalic.otf)  format('opentype'), 
-}
-*/
-
- @font-face {
-  font-family: 'compagnon';
-  src: url('compagnon-light-webfont.woff2') format('woff2'),
-       url('compagnon-light-webfont.woff') format('woff');
   }
-
+  
  body{
     margin: 0;
     padding: 0;
