@@ -2,6 +2,7 @@
  @font-face {
     font-family: 'compagnon' !important;
     src: url(/fonts/COMPAGNON-LIGHTITALIC.OTF);
+
  }
 
  body{
@@ -114,6 +115,10 @@
             display: block;
             padding-bottom: 16px;
         }
+
+        #aboutMenu {
+          padding-bottom: 8px !important;
+        }
   }
 
   /* styling della galleria */
@@ -137,14 +142,40 @@
     width: 100%;
   }
 
+  .smallContainer {
+    display: none;
+  }
+
+  .container a, .smallContainer a {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-style: italic;
+  }
+
+  .container a:hover, .smallContainer a:hover {
+    font-style: normal;
+    font-weight: bolder;
+  }
+
   .container .column {
     flex: 42%;
     max-width: 42%;
     padding: 2%;
   }
 
-  .container p {
+  .container p, .smallContainer p {
     text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .special{
+    font-weight: bolder !important;
+    font-style: normal !important;
   }
 
   .image {
@@ -188,13 +219,13 @@
 
     .smallContainer {
       display: block;
-
     }
 
     .smallContainer .column {
       max-width: auto;
-      padding-left: 20%;
-      padding-right: 20%;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 16px;
     }
   }
   
