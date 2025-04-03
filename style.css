@@ -1,7 +1,7 @@
 /* global */
  @font-face {
     font-family: 'compagnon' !important;
-    src: url(/fonts/COMPAGNON-LIGHTITALIC.OTF);
+    src: url(/fonts/Compagnon-Italic.woff2);
 
  }
 
@@ -172,6 +172,7 @@
     font-style: normal;
     text-decoration: none;
   }
+
 
   .special{
     font-weight: bolder !important;
