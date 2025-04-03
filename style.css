@@ -1,8 +1,17 @@
 /* global */
- @font-face {
+/* @font-face {
     font-family: 'compagnon' !important;
     src: url(/fonts/Compagnon-Italic.woff2);
+ }
+*/
 
+ @font-face {
+  font-family: 'compagnon' !important;
+  src: url(/fonts/Compagnon-Italic.eot); /* IE9 Compat Modes */
+  src: url(/fonts/Compagnon-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url(/fonts/Compagnon-Italic.woff2) format('woff2'), /* Super Modern Browsers */
+       url(/fonts/Compagnon-Italic.woff) format('woff'), /* Pretty Modern Browsers */
+       url(/fonts/Compagnon-LightItalic.otf)  format('truetype'), /* Safari, Android, iOS */
  }
 
  body{
