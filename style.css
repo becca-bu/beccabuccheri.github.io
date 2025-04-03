@@ -20,6 +20,7 @@
     font-family: 'compagnon';
     background-color: #d9d9d9;
     color: #101214;
+    font-family: 'compagnon', Fallback, serif;
  }
 
  /* Style the header with a grey background and some padding */
