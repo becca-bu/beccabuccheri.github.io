@@ -194,10 +194,20 @@
     font-style: italic;
   }
 
+  .container {
+    padding-left: 10%;
+    padding-right: 0;
+  }
+
   .container .column {
     flex: 42%;
     max-width: 42%;
-    padding: 2%;
+    padding-top: 32px;
+  }
+
+  .container img {
+    max-height: 80%;
+    max-width: max-content;
   }
 
   .container p, .smallContainer p {
@@ -229,6 +239,7 @@
       flex: 42%;
       max-width: 42%;
       padding: 2%;
+      padding-top: 32px;
     }
   
     .container p {
@@ -290,8 +301,8 @@
   }
 
   .overlay p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     font-weight: normal;
     font-style: normal;
   }
@@ -302,7 +313,7 @@
   }
 
   .overlay h5 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: lighter;
     font-style: italic;
   }
@@ -317,4 +328,10 @@
   .overlay a:hover {
     font-weight: bold;
     font-style: italic;
+  }
+
+  .dividers {
+    padding-top: 16px;
+    padding-bottom: 0;
+    font-size: 24px;
   }
