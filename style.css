@@ -1,13 +1,13 @@
 /* global */
   @font-face {
     font-family: 'compagnon';
-    font-weight: light;
+    font-weight: lighter;
     font-style: italic;
-    src: url(fonts/Compagnon-Light.eot); 
-    src: url(fonts/Compagnon-Light.eot#iefix) format('embedded-opentype'),
-    url(fonts/Compagnon-Light.woff2) format('woff2'), 
-    url(fonts/Compagnon-Light.woff) format('woff'), 
-    url(fonts/Compagnon-Light.otf)  format('opentype');
+    src: url(fonts/Compagnon-LightItalic.otf); 
+    src: url(fonts/Compagnon-LightItalic.otf) format('embedded-opentype'),
+    url(fonts/Compagnon-LightItalic.otf) format('woff2'), 
+    url(fonts/Compagnon-LightItalic.otf) format('woff'), 
+    url(fonts/Compagnon-LightItalic.otf)  format('opentype');
   }
 
   @font-face {
@@ -21,17 +21,6 @@
     url(fonts/Compagnon-Roman.otf)  format('opentype');
   }
   
-  @font-face {
-    font-family: 'compagnon';
-    font-weight: light;
-    font-style: normal;
-    src: url(fonts/Compagnon-Light.eot); 
-    src: url(fonts/Compagnon-Light.eot#iefix) format('embedded-opentype'),
-    url(fonts/Compagnon-Light.woff2) format('woff2'), 
-    url(fonts/Compagnon-Light.woff) format('woff'), 
-    url(fonts/Compagnon-Light.otf)  format('opentype');
-  }
-
   @font-face {
     font-family: 'compagnon';
     font-weight: bold;
@@ -59,7 +48,9 @@
     padding: 0;
     background-color: #d9d9d9;
     color: #101214;
-    font-family: 'compagnon', monospace;
+    font-family: 'compagnon';
+    font-weight: light;
+    font-style: italic;
  }
 
  /* Style the header with a grey background and some padding */
@@ -75,7 +66,7 @@
     padding-bottom: 24px;
     font-size: 40px;
     animation-name: logo;
-    animation-duration: 2s;
+    animation-duration: 1.6s;
     animation-direction: normal;
     animation-timing-function: step-start;
     animation-delay: 0s;
@@ -89,16 +80,15 @@
         font-style: italic;
     }
     25% {
-        font-weight: bold;
-        font-style: normal;
+      font-weight: bold;
+      font-style: normal;
     }
     50% {
         font-weight: normal;
         font-style: normal;
     }
-
     75% {
-      font-weight: light;
+      font-weight: lighter;
       font-style: italic;  
     }
     100% {
@@ -114,8 +104,6 @@
     font-size: 20px;
     line-height: 24px;
     border-radius: 4px;
-    font-weight: light;
-    font-style: italic;
     padding: 40px;
   }
 
@@ -123,13 +111,13 @@
   .header a:active, a:focus {
     color: black;
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
   }
   
   .header a:hover {
     color: black;
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
   }
 
   .header-links {
@@ -148,8 +136,8 @@
  }
 
  .current {
-  font-weight: bold;
-  font-style: normal;
+    font-weight: bold;
+    font-style: italic;
  }
 
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -201,8 +189,8 @@
   }
 
   .container a:hover, .smallContainer a:hover {
-    font-style: normal;
-    font-weight: bolder;
+    font-weight: bold;
+    font-style: italic;
   }
 
   .container .column {
@@ -222,8 +210,8 @@
 
 
   .special{
-    font-weight: bolder !important;
-    font-style: normal !important;
+    font-weight: bold;
+    font-style: italic;
   }
 
   .image {
